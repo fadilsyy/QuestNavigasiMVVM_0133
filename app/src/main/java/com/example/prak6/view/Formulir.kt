@@ -27,10 +27,10 @@ import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.ui.unit.dp
 import androidx.compose.material3.RadioButton
 
-@OptIn(ExperimentalMaterial3Api:class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(
-    jenisK:List<String> = listOf("laki-laki", "Perempuan"),
+    jenisK:List<String> = listOf("Laki-laki", "Perempuan"),
     OnSubmitBtnClick : () -> Unit
 ){
     Scaffold(modifier = Modifier,
