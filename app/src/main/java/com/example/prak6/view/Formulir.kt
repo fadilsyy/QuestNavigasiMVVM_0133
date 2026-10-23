@@ -18,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api:class)
@@ -46,7 +47,9 @@ fun FormIsian(
                 label = {Text(text = "Nama Lengkap")},
                 onValueChange = {},
             )
-            HorizontalDivider()
+            HorizontalDivider(modifier = Modifier
+                .padding(20.dp)
+                .width(250.dp), thickness = Thickness, color = Color.Red)
         }
     }
 }
