@@ -5,4 +5,6 @@ import androidx.compose.runtime.Composable
 
 @OptIn(ExperimentalMaterial3Api:class)
 @Composable
-fun FormIsian(){}
+fun FormIsian(
+    jenisK:List<String> = listOf("laki-laki", "Perempuan"),
+){}
