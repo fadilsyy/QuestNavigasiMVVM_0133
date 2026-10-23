@@ -16,10 +16,12 @@ import com.example.prak6.R
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.RadioButton
 
 @OptIn(ExperimentalMaterial3Api:class)
 @Composable
@@ -50,6 +52,18 @@ fun FormIsian(
             HorizontalDivider(modifier = Modifier
                 .padding(20.dp)
                 .width(250.dp), thickness = Thickness, color = Color.Red)
+            Row{
+                jenisK.forEach {
+                    item->
+                    Row(verticalAlignment = Alignment.CenterVertically){
+                        RadioButton(
+                            selected = false,
+                            onClick = {item}
+                        )
+                        Text(text = item)
+                    }
+                }
+            }
         }
     }
 }
