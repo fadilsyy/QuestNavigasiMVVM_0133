@@ -7,4 +7,8 @@ import androidx.compose.runtime.Composable
 @Composable
 fun TampilData(
     onBackBtnClick:()->Unit
-){}
+){
+    val items = listOf(
+
+    )
+}
